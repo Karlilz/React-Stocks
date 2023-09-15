@@ -15,4 +15,4 @@ If a user clicks on one of the stocks listed in the Dashboard view, they should 
 The resources listed at the bottom of the readme might come in handy when building this out.
 
 ## About (/about)
-If a user clicks on "About" in the navigation bar, they should be directed to an about page. This is just a static page that displays a description of your app.
+If a user clicks on "About" in the navigation bar, they should be directed to an about page. This is just a static page that displays a description of your app.# React-Stocks
