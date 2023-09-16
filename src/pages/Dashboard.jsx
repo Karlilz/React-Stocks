@@ -13,32 +13,28 @@ const Dashboard = (props) => {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'left', marginTop: '10px'}}>
-      <table>
+      <table style={{ width: '80%', borderCollapse: 'collapse', marginBottom: '20px' }}>
         <tr>
-          <th style={{textDecoration:"underline"}}>Company</th>
-          <th style={{textDecoration:"underline"}}>Ticker Symbol</th>
-          <th style={{textDecoration:"underline"}}>Price</th>
-          <th style={{textDecoration:"underline"}}>Price Change</th>
+          <th style={{textDecoration:"underline", fontSize:"20px"}}>Company Name & Symbol</th>
+          <th style={{textDecoration:"underline", fontSize:"20px"}}>Price</th>
+          <th style={{textDecoration:"underline", fontSize:"20px"}}>Price Change</th>
         </tr>
         {stocks.map((stock) => {
           return (
             <tr key={stock.symbol}>
-              <td>
-                <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: 'black' }}>
-                  {stock.name}
+              <td style={{ borderBottom: "1px solid #ccc", padding: '10px' }}>
+                <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: 'black'}}>
+                  <b>{stock.name} ({stock.symbol})</b>
                 </Link>
               </td>
-              <td>
-                <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: 'black' }}>
-                  {stock.symbol}
-                </Link>
-              </td>
-              <td>
-                <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: 'black' }}>
+
+              <td style={{ borderBottom: "1px solid #ccc", padding: '10px' }}>
+                <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: 'black'}}>
                   {stock.lastPrice}
                 </Link>
               </td>
-              <td>
+
+              <td style={{ borderBottom: "1px solid #ccc", padding: '10px' }}>
                 <Link to={`/stocks/${stock.symbol}`} style={{ textDecoration: 'none', color: stock.change > 0 ? 'green' : 'red' }}>
                   {stock.change}
                 </Link>
