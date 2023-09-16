@@ -9,11 +9,11 @@ const Nav = (props) => {
       </Link>
 
       <Link to="/about" style={{ textDecoration: "underline", color: "white"}}>
-        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>About</span>
+        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>About $tock $avvy</span>
       </Link>
 
       <Link to="/stocks" style={{ textDecoration: "underline", color: "white"}}>
-        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>Stocks Dashboard</span>
+        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>Stock Indexes</span>
       </Link>
     </div>
   );

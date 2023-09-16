@@ -18,7 +18,6 @@ function App() {
       <Route path='/stocks' element={<Dashboard></Dashboard>}></Route>
       {/* <Route path='/stocks/:symbol' element={<Stock></Stock>}></Route> */}
       </Routes>
-    {/* <Dashboard/> */}
     {/* <Stock/> */}
     </div>
   );
