@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   return (
-    <div className="nav">
-      <Link to="/">
-        <div>iStocks</div>
-      </Link>
-      
-      <Link to="/stocks">
-        <div>Stocks</div>
+    <div className="nav"  style={{display:'flex', flexDirection:'row', justifyContent:'space-around',backgroundColor: 'black', height: '60px' }}>
+      <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px"}}>Home</span>
       </Link>
 
-      <Link to="/about">
-        <div>About</div>
+      <Link to="/about" style={{ textDecoration: "none", color: "white" }}>
+        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>About</span>
+      </Link>
+
+      <Link to="/stocks" style={{ textDecoration: "none", color: "white" }}>
+        <span style={{ fontWeight: "bold", fontSize: "20px", lineHeight: "60px" }}>Stocks Dashboard</span>
       </Link>
     </div>
   );
