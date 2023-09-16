@@ -15,12 +15,10 @@ function App() {
     <Routes>
       <Route path='/' element={<Home></Home>}></Route>
       <Route path='/about' element={<About></About>}></Route>
-      {/* <Route path='/stocks' element={<Dashboard></Dashboard>}></Route>
-      <Route path='/stocks/:symbol' element={<Stock></Stock>}></Route> */}
+      <Route path='/stocks' element={<Dashboard></Dashboard>}></Route>
+      {/* <Route path='/stocks/:symbol' element={<Stock></Stock>}></Route> */}
       </Routes>
-    {/* <About/> */}
     {/* <Dashboard/> */}
-    {/* <Home/> */}
     {/* <Stock/> */}
     </div>
   );
